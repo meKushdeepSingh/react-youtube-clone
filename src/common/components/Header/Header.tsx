@@ -1,10 +1,13 @@
 import type { FC } from "react";
 import { Menu } from "../../../assets";
+import { Button } from "../Button";
 
 const Header: FC = () => {
   return (
-    <div className="header items-center justify-between p-4 bg-gray-800 text-white flex w-full">
-      <Menu />
+    <div className="items-center justify-between flex w-full h-[56px] px-4">
+      <Button type="icon-round">
+        <Menu />
+      </Button>
     </div>
   );
 };
