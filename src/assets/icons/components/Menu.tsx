@@ -22,4 +22,4 @@ const Menu: FC<SVGProps<SVGSVGElement>> = ({
   );
 };
 
-export { Menu };
+export default Menu;
