@@ -10,4 +10,5 @@ export type ButtonType =
   | "icon-round-bg-visible"
   | "text"
   | "icon-text-horizontal"
-  | "icon-text-vertical";
+  | "icon-text-vertical"
+  | "no-style";

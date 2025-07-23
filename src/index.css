@@ -26,4 +26,13 @@ body {
 @theme {
   --color-background: #0f0f0f;
   --color-disabled: #717171;
+  --color-hover: #88888866;
+  --color-button-background: #ffffff14;
+  --color-border-color: #88888866;
+
+  /* Text colors */
+  --color-text: #ffffff;
+  --color-text-secondary: #b0b0b0;
+  --color-text-tertiary: #717171;
+  --color-text-placeholder: #717171;
 }
