@@ -1,6 +1,6 @@
 import type { FC, SVGProps } from "react";
 
-const Menu: FC<SVGProps<SVGSVGElement>> = ({
+const Search: FC<SVGProps<SVGSVGElement>> = ({
   height = "24",
   width = "24",
   fill = "currentColor",
@@ -17,9 +17,13 @@ const Menu: FC<SVGProps<SVGSVGElement>> = ({
       aria-hidden="true"
       {...rest}
     >
-      <path d="M21 6H3V5h18v1zm0 5H3v1h18v-1zm0 6H3v1h18v-1z" />
+      <path
+        clip-rule="evenodd"
+        d="M16.296 16.996a8 8 0 11.707-.708l3.909 3.91-.707.707-3.909-3.909zM18 11a7 7 0 00-14 0 7 7 0 1014 0z"
+        fill-rule="evenodd"
+      ></path>
     </svg>
   );
 };
 
-export { Menu };
+export default Search;
