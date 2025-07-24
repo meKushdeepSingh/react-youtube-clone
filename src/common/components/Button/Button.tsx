@@ -1,9 +1,9 @@
-import type { FC } from "react";
-import type { ButtonProps, ButtonType } from "./Button.type";
+import { createElement, type FC } from "react";
+import type { ButtonProps, ButtonTypeMap } from "./Button.type";
 
-const Button: FC<ButtonProps> = ({ children, onClick, className, type }) => {
+const Button: FC<ButtonProps> = ({ onClick, className, type, label, icon }) => {
   // Define base styles for each button type
-  const baseClass: Record<ButtonType, string> = {
+  const baseClass: ButtonTypeMap = {
     // Icon button styles
     "icon-round": "rounded-full p-2 hover:bg-hover",
     "icon-round-bg-visible":
@@ -27,7 +27,12 @@ const Button: FC<ButtonProps> = ({ children, onClick, className, type }) => {
       onClick={onClick}
       className={`${baseClass[type]} ${className}`}
     >
-      {children}
+      {icon && (
+        <span className="icon">
+          {typeof icon === "function" ? createElement(icon) : icon}
+        </span>
+      )}
+      {label && <span className="label">{label}</span>}
     </button>
   );
 };

@@ -31,17 +31,17 @@ const SearchBar: FC = () => {
             <Button
               onClick={() => setInputValue("")}
               type="icon-round"
-            >
-              <Cross />
-            </Button>
+              icon={Cross}
+            />
           </div>
         )}
       </div>
 
       <div className="flex h-full w-16 items-center justify-center bg-button-background border border-l-0 border-border-color rounded-tr-full rounded-br-full">
-        <Button type="no-style">
-          <Search />
-        </Button>
+        <Button
+          type="no-style"
+          icon={Search}
+        />
       </div>
     </div>
   );
