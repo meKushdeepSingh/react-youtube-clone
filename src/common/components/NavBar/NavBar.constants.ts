@@ -35,32 +35,27 @@ export const navigationOptions: NavBarOption[] = [
 
 export const extendedNavigationOptions: ExtendedNavBarOption[] = [
   {
-    label: null,
-    data: [
-      {
-        label: "Home",
-        activeIcon: HomeFilled,
-        inactiveIcon: HomeOutline,
-      },
-      {
-        label: "Shorts",
-        activeIcon: ShortsFilled,
-        inactiveIcon: ShortsOutline,
-      },
-      {
-        label: "Subscriptions",
-        activeIcon: SubscriptionFilled,
-        inactiveIcon: SubscriptionOutline,
-      },
-      {
-        label: "You",
-        activeIcon: ProfileFilled,
-        inactiveIcon: ProfileOutline,
-      },
-    ],
+    label: "Home",
+    activeIcon: HomeFilled,
+    inactiveIcon: HomeOutline,
+    data: [],
+  },
+  {
+    label: "Shorts",
+    activeIcon: ShortsFilled,
+    inactiveIcon: ShortsOutline,
+    data: [],
+  },
+  {
+    label: "Subscriptions",
+    activeIcon: SubscriptionFilled,
+    inactiveIcon: SubscriptionOutline,
+    data: [],
   },
   {
     label: "You",
+    activeIcon: ProfileFilled,
+    inactiveIcon: ProfileOutline,
     data: [
       {
         label: "History",

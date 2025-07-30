@@ -23,7 +23,6 @@ export type NavBarOption = {
   inactiveIcon: FC<SVGProps<SVGSVGElement>>;
 };
 
-export type ExtendedNavBarOption = {
-  label: string | null;
+export type ExtendedNavBarOption = NavBarOption & {
   data: NavBarOption[];
 };

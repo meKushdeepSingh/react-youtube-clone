@@ -2,13 +2,18 @@ import type { FC } from "react";
 import { Add, Bell, Menu, Mic, ProfileDummy, Youtube } from "../../../assets";
 import { Button } from "../Button";
 import { SearchBar } from "../SearchBar";
+import { useAppContext } from "../../../context";
 
 const Header: FC = () => {
+  // Using the AppContext to manage the state of the navigation bar
+  const { setNavOpen, navOpen } = useAppContext();
+
   return (
     <div className="items-center flex w-full h-[56px] px-4">
       <div className="flex items-center space-x-4">
         {/* Menu Button */}
         <Button
+          onClick={() => setNavOpen(!navOpen)} // Placeholder for menu click handler
           type="icon-round"
           icon={Menu}
         />

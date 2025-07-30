@@ -5,7 +5,8 @@ const Button: FC<ButtonProps> = ({ onClick, className, type, label, icon }) => {
   // Define base styles for each button type
   const baseClass: ButtonTypeMap = {
     // Icon button styles
-    "icon-round": "rounded-full p-2 hover:bg-hover",
+    "icon-round":
+      "rounded-full p-2 hover:bg-hover focus:outline-none  active:scale-90 transition duration-150 focus:outline-none",
     "icon-round-bg-visible":
       "rounded-full p-2 bg-button-background hover:bg-hover",
 
