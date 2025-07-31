@@ -8,9 +8,15 @@ const ExtendedNavBar: FC = () => {
   const { selectedNav, setSelectedNav } = useAppContext();
 
   return (
-    <div className="container mx-auto flex flex-col justify-between items-center">
+    <div className="container mx-auto flex flex-col justify-between items-center px-2">
       {extendedNavigationOptions.map((section) => (
-        <div>{section.label}</div>
+        // bg-button-background
+        <Button
+          className="justify-start w-full"
+          type="icon-text-horizontal"
+          label={section.label}
+          icon={section.activeIcon}
+        />
       ))}
     </div>
   );

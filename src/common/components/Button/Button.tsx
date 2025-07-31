@@ -14,7 +14,8 @@ const Button: FC<ButtonProps> = ({ onClick, className, type, label, icon }) => {
     text: "text-blue-500 hover:text-blue-600",
 
     // Icon with text styles
-    "icon-text-horizontal": "flex items-center space-x-2",
+    "icon-text-horizontal":
+      "flex items-center space-x-2 py-2 px-2 hover:bg-hover rounded text-[14px]",
     "icon-text-horizontal-bg-visible":
       "flex items-center space-x-2 py-2 px-4 bg-button-background hover:bg-hover rounded-full",
     "icon-text-vertical": "flex flex-col items-center space-y-1",
